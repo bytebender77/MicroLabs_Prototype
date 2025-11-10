@@ -1,0 +1,86 @@
+.home-care-card {
+  margin: 20px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow, rgba(0, 0, 0, 0.1));
+  border-left: 4px solid #2196F3;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .home-care-card {
+  background: linear-gradient(135deg, rgba(33, 150, 243, 0.2) 0%, rgba(156, 39, 176, 0.2) 100%);
+}
+
+.home-care-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.home-care-header h3 {
+  margin: 0;
+  color: var(--text-primary, #333);
+  font-size: 18px;
+}
+
+.disease-badge {
+  padding: 4px 12px;
+  background: #2196F3;
+  color: white;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.home-care-content {
+  margin-top: 10px;
+}
+
+.home-care-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home-care-list li {
+  padding: 12px;
+  background: var(--bg-secondary, #ffffff);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary, #333);
+  box-shadow: 0 1px 3px var(--shadow, rgba(0, 0, 0, 0.1));
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.home-care-list li.normal-tip {
+  border-left: 3px solid #4CAF50;
+}
+
+.home-care-list li.warning-tip {
+  border-left: 3px solid #ff9800;
+  background: #fff3e0;
+  font-weight: 600;
+}
+
+.dark-mode .home-care-list li.warning-tip {
+  background: rgba(255, 152, 0, 0.2);
+}
+
+.home-care-list li::before {
+  content: '✓';
+  margin-right: 8px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.home-care-list li.warning-tip::before {
+  content: '⚠️';
+  color: #ff9800;
+}
+

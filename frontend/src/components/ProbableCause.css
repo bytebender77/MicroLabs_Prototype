@@ -1,0 +1,244 @@
+.probable-cause-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: var(--bg-secondary, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow, rgba(0, 0, 0, 0.1));
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.probable-cause-container h3 {
+  margin-top: 0;
+  color: var(--text-primary, #333);
+  font-size: 20px;
+}
+
+.disease-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.disease-card {
+  padding: 20px;
+  background: var(--bg-secondary, #f9f9f9);
+  border-radius: 8px;
+  border-left: 4px solid #2196F3;
+}
+
+.disease-card.priority-1 {
+  border-left-color: #f44336;
+  background: #fff5f5;
+}
+
+.dark-mode .disease-card.priority-1 {
+  background: rgba(244, 67, 54, 0.15);
+}
+
+.disease-card.priority-2 {
+  border-left-color: #ff9800;
+  background: #fff8e1;
+}
+
+.dark-mode .disease-card.priority-2 {
+  background: rgba(255, 152, 0, 0.15);
+}
+
+.disease-card.priority-3 {
+  border-left-color: #4CAF50;
+}
+
+.disease-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.disease-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary, #333);
+}
+
+.match-score {
+  padding: 4px 12px;
+  background: #2196F3;
+  color: white;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.disease-severity {
+  margin-bottom: 15px;
+}
+
+.severity-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.severity-badge.mild_to_moderate {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.severity-badge.moderate_to_severe {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.severity-badge.mild_to_critical {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.matching-symptoms {
+  margin-bottom: 15px;
+}
+
+.matching-symptoms strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-primary, #333);
+}
+
+.matching-symptoms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.matching-symptoms li {
+  padding: 5px 0;
+  color: var(--text-secondary, #666);
+  font-size: 14px;
+}
+
+.home-care-section,
+.diagnostic-tests,
+.doctor-warning {
+  margin-top: 15px;
+  padding: 15px;
+  background: var(--bg-secondary, #ffffff);
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.home-care-section h4,
+.diagnostic-tests h4,
+.doctor-warning h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.home-care-section ul,
+.diagnostic-tests ul,
+.doctor-warning ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-care-section li,
+.diagnostic-tests li,
+.doctor-warning li {
+  padding: 8px 0;
+  font-size: 14px;
+  color: var(--text-secondary, #666);
+}
+
+.home-care-section li.warning {
+  color: #f57c00;
+  font-weight: 600;
+}
+
+.doctor-warning {
+  background: #fff3e0;
+  border-left: 3px solid #ff9800;
+}
+
+.dark-mode .doctor-warning {
+  background: rgba(255, 152, 0, 0.2);
+}
+
+.medication-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--bg-secondary, #f9f9f9);
+  border-radius: 8px;
+}
+
+.medication-section h3 {
+  margin-top: 0;
+  color: var(--text-primary, #333);
+}
+
+.medication-card {
+  padding: 15px;
+  background: var(--bg-secondary, #ffffff);
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.med-item {
+  margin-bottom: 15px;
+}
+
+.med-item strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--text-primary, #333);
+}
+
+.med-item p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: var(--text-secondary, #666);
+}
+
+.med-note {
+  font-style: italic;
+  color: var(--text-secondary, #666);
+}
+
+.avoid-meds {
+  padding: 15px;
+  background: #ffebee;
+  border-radius: 6px;
+  margin: 15px 0;
+  border-left: 3px solid #f44336;
+}
+
+.avoid-meds strong {
+  color: #c62828;
+}
+
+.avoid-meds p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.disclaimer-box {
+  padding: 15px;
+  background: #fff3e0;
+  border-radius: 6px;
+  border-left: 3px solid #ff9800;
+  font-size: 13px;
+  color: var(--text-secondary, #666);
+  margin-top: 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .disclaimer-box {
+  background: rgba(255, 152, 0, 0.2);
+  color: var(--text-secondary, #b0b0b0);
+}
+

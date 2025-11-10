@@ -1,0 +1,17 @@
+{
+    "symptom_keywords": {
+      "headache": ["headache", "head pain", "migraine", "head ache"],
+      "body_ache": ["body pain", "body ache", "muscle pain", "myalgia"],
+      "high_fever": ["high fever", "very hot", "burning up", "104", "40 degrees"],
+      "rash": ["rash", "red spots", "skin eruption", "dots on skin"],
+      "bleeding": ["bleeding", "blood", "nosebleed", "bleeding gums"],
+      "vomiting": ["vomiting", "throwing up", "nausea", "puking"],
+      "diarrhea": ["diarrhea", "loose motion", "loose stool", "frequent stool"]
+    },
+    
+    "geographic_diseases": {
+      "tropical": ["dengue", "malaria", "chikungunya"],
+      "monsoon_season": ["dengue", "typhoid", "leptospirosis"],
+      "winter": ["influenza", "viral_fever"]
+    }
+  }
